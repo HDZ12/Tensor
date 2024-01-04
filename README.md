@@ -1,5 +1,5 @@
 # Tensor
-对于张量补全相关算法的matlab复现
+对于张量补全相关算法的matlab整理和复现
 ## Unfold
 $$unfold_k(X) := X^{(k)} \in R^{I_k \times (I_1...I_{k-1}I_{k+1}...I_n)}$$
 一个用于展开张量的 MATLAB 函数。函数的输入参数是：
@@ -15,3 +15,46 @@ X = reshape(shiftdim(X,i-1), dim(i), []);
 **这个函数首先使用 `shiftdim` 函数将张量 `X` 沿着第 `i` 个维度进行旋转，然后使用 `reshape` 函数将旋转后的张量重塑为一个二维矩阵。这个二维矩阵的行数等于第 `i` 个维度的大小，列数等于其他维度的大小的乘积**
 ## Fold
 $$fold_k(X^{(k)}) := X$$
+这个 Fold 函数的工作原理是，首先使用 circshift 函数将 dim 向左旋转 i-1 个位置，然后使用 reshape 函数将输入张量 X 重塑为 dim 指定的形状。最后，使用 shiftdim 函数将重塑后的张量 X 沿着第 length(dim)+1-i 个维度进行旋转
+```Matlab
+function [X] = Fold(X, dim, i)
+dim = circshift(dim, [1-i, 1-i]);
+X = shiftdim(reshape(X, dim), length(dim)+1-i);
+```
+**与`unfold`操作相对一个是折叠一个是展开**
+# SigularValue
+这个 SingularValue 函数的目的是计算输入矩阵 A 的奇异值。奇异值是描述矩阵作用于某些向量的标量，都是描述向量模长变化幅度的数值
+函数的工作原理如下：
+
+首先，函数获取输入矩阵 A 的大小 m 和 n。
+
+如果 2\*m < n，函数计算 A 的自乘 A*A'，然后对结果进行奇异值分解 svd(AAT)，并取出奇异值 V1。然后，函数计算 V 的平方根，并返回结果。
+
+如果 m > 2*n，函数计算 A 的转置自乘 A'*A，然后对结果进行奇异值分解 svd(AAT)，并取出奇异值 V。然后，函数计算 V 的平方根，并返回结果。
+
+如果上述两个条件都不满足，函数直接对 A 进行奇异值分解 svd(A)，并取出奇异值 V1。然后，函数返回 V 的对角线元素。
+
+这个函数的目的是提供一种高效的方法来计算矩阵的奇异值，特别是对于非常大或者非常小的矩阵
+```Matlab
+function V = SingularValue(A)
+[m, n] = size(A);
+if 2*m < n
+    AAT = A*A';
+    [S, V, D] = svd(AAT);
+    V = sqrt(diag(V));
+    return;
+end
+if m > 2*n
+    AAT = A'*A;
+    [S, V, D] = svd(AAT);
+    V = sqrt(diag(V));
+    return;
+end
+[S,V,D] = svd(A);
+V = diag(V);
+```
+# Truncate
+$$T_{\tau}(X) = U\Sigma_{\overline{\tau}}V^T$$
+
+ $$\Sigma_{\overline{\tau}} = \text{diag}(\min(\sigma_i, \tau))$$
+ 
