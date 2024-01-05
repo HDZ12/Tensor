@@ -57,4 +57,4 @@ V = diag(V);
 $$T_{\tau}(X) = U\Sigma_{\overline{\tau}}V^T$$
 
  $$\Sigma_{\overline{\tau}} = \text{diag}(\min(\sigma_i, \tau))$$
- 
+这个运算符的作用是将矩阵X的奇异值分解中的大奇异值截断为τ，从而得到一个对角线元素不超过τ的矩阵。
