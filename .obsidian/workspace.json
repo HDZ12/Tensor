@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "a7ddb3fe0878b741",
@@ -162,7 +163,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "b85a8a351ad3f56c",
+  "active": "1c84577912ba0a71",
   "lastOpenFiles": [
     "README.md",
     "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/READEME.md",
