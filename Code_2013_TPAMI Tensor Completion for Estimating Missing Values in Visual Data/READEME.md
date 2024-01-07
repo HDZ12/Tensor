@@ -69,3 +69,12 @@ end
 获取第一帧图像的尺寸。
 对于 inData 中的每一帧图像，将其保存为一个文件。文件名由 filePath、帧的索引和 format 组成。
 这段代码应该能够正确地执行，只要提供的图像文件存在并且可以被 imwrite 函数写入。
+# MySVDtau,MySVD,MySVDs,Turncate
+这部分代码均为截断操作。具体参考`Truncate`
+
+# SiLRTC
+min(X, M1, M2, M3,... Mn): (\gamma1||X_(1)-M1||^2 + \gamma2||X_(2)-T2||^2 + \gamma3||X_(3)-T3||^2 + ...)/2 +
+
+$$ \alpha1||M1||_* + \alpha2||M2||_* + \alpha3||M3||_* + ....$$
+
+$$s.t. X_\Omega = T_\Omega$$
