@@ -137,7 +137,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -161,7 +162,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "b85a8a351ad3f56c",
+  "active": "eb80c2f6107b736e",
   "lastOpenFiles": [
     "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/code/modifiedImg.png",
     "README.md",

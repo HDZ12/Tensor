@@ -27,7 +27,7 @@ end
 
 如果 isColor 为0，表示图像是灰度的，那么代码会读取每个图像，将其转换为双精度数组，并将其存储在一个三维数组 data 中。然后，它会将 data 保存到一个名为 ‘preFileNamegray.mat’ 的文件中。
 
-如果 isColor 为1，表示图像是彩色的，那么代码会分别读取每个图像的红色、绿色和蓝色通道，并将它们存储在三个三维数组 dataR、dataG 和 dataB 中。然后，它会将这三个数组分别保存到 ‘preFileNameR.mat’，‘preFileNameG.mat’ 和 ‘preFileNameB.mat’ 这三个文件中。
+如果 isColor 为1，表示图像是彩色的，**那么代码会分别读取每个图像的红色**、绿色和蓝色通道，并将它们存储在三个三维数组 dataR、dataG 和 dataB 中。然后，它会将这三个数组分别保存到 ‘preFileNameR.mat’，‘preFileNameG.mat’ 和 ‘preFileNameB.mat’ 这三个文件中。
 # CreateMovie
 ```Matlab
 function CreateMovie(T, fileName)

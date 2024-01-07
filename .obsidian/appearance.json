@@ -1,6 +1,8 @@
 {
   "accentColor": "",
   "cssTheme": "Atom",
-  "textFontFamily": "",
-  "interfaceFontFamily": ""
+  "textFontFamily": "霞鹜文楷 GB 屏幕阅读版",
+  "interfaceFontFamily": "霞鹜文楷 GB 屏幕阅读版",
+  "baseFontSize": 15,
+  "monospaceFontFamily": "霞鹜文楷 GB 屏幕阅读版"
 }
