@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "80d7d5fd1fc69c3a",
+        "id": "f4025457fa0560b4",
         "type": "tabs",
         "children": [
           {
-            "id": "b85a8a351ad3f56c",
+            "id": "b029aaa69a4e9a9f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "a7ddb3fe0878b741",
@@ -163,9 +162,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "1c84577912ba0a71",
+  "active": "b029aaa69a4e9a9f",
   "lastOpenFiles": [
     "README.md",
+    "未命名.canvas",
+    "未命名 1.canvas",
     "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/READEME.md",
     "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/code/testImg.png",
     "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/code/untitled.png",
