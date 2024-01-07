@@ -1,0 +1,171 @@
+{
+  "main": {
+    "id": "df61c87aa6717aa4",
+    "type": "split",
+    "children": [
+      {
+        "id": "80d7d5fd1fc69c3a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b85a8a351ad3f56c",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/code/README.pdf"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ef4bd0993d632746",
+    "type": "split",
+    "children": [
+      {
+        "id": "33292a0fd35c2e6f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1c84577912ba0a71",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c7bf3327cd9e6fc4",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "eb6a9dcf8efb76d6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a7ddb3fe0878b741",
+    "type": "split",
+    "children": [
+      {
+        "id": "bba88626b9862e17",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dba7b018ad192efa",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/code/README.pdf",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c44a88d489d22cdc",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/code/README.pdf",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "2ec1703114d23281",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "b985d2bd092c393f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/code/README.pdf"
+              }
+            }
+          },
+          {
+            "id": "eb80c2f6107b736e",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "obsidian-advanced-slides:Show Slide Preview": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "cloze:显/隐所有填空": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "obsidian-omnivore:Omnivore": false,
+      "omnisearch:Omnisearch": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "b85a8a351ad3f56c",
+  "lastOpenFiles": [
+    "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/code/untitled.png",
+    "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/code/testImg.png",
+    "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/READEME.md",
+    "README.md",
+    "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/code/README.pdf",
+    "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/code/modifiedImg.png"
+  ]
+}
