@@ -12,13 +12,13 @@ function [X, errList] = SiLRTC(T, Omega, alpha, gamma, maxIter, epsilon, X)
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 if nargin < 7
     X = T;
-    X(logical(1-Omega)) = mean(T(Omega));
+    X(logical(1-Omega)) = mean(T(Omega));%% 将x的未知元素设置为T中已知元素的平均值
 end
 
 errList = zeros(maxIter, 1);
-normT = norm(T(:));
+normT = norm(T(:)); %% 计算张量T的Frobenius范数
 %L = errList;
-dim = size(T);
+dim = size(T);%%张量每个维度的长度
 M = cell(ndims(T), 1);
 gammasum = sum(gamma);
 tau = alpha./ gamma;
