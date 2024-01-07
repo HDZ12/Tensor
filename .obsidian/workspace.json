@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/READEME.md",
-                "mode": "preview",
+                "file": "README.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/READEME.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/READEME.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/READEME.md"
+                "file": "README.md"
               }
             }
           },
@@ -162,13 +162,13 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "eb80c2f6107b736e",
+  "active": "b85a8a351ad3f56c",
   "lastOpenFiles": [
-    "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/code/modifiedImg.png",
-    "README.md",
-    "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/READEME.md",
-    "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/code/README.pdf",
+    "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/code/testImg.png",
     "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/code/untitled.png",
-    "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/code/testImg.png"
+    "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/code/README.pdf",
+    "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/code/modifiedImg.png",
+    "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/READEME.md",
+    "README.md"
   ]
 }
