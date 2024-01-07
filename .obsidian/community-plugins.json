@@ -19,5 +19,6 @@
   "obsidian-tasks-plugin",
   "templater-obsidian",
   "text-extractor",
-  "oz-image-plugin"
+  "oz-image-plugin",
+  "ProxyGithub"
 ]
