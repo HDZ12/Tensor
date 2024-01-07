@@ -158,3 +158,25 @@ fprintf('SiLRTC ends: total iterations = %d difference=%f\n\n', k, errList(k));
 $$min_{X} : \Psi(X)$$
 $$s.t. : X_\Omega = M_\Omega$$
 $$\Psi(X) = max_{Z_{i(i)} <= 1}: <X, \sum_i Y_i> - 0.5 \mu_i \|Y_i\|_F^2$$
+函数的输入参数包括：
+
+- `M`：需要进行补全的张量
+- `Omega`：表示已知元素位置的矩阵
+- `alpha`：用于调整低秩正则项的权重
+- `mu`：用于调整数据一致性项的权重
+- `L`：Lipschitz常数的初始值
+- `C`：用于调整Lipschitz常数的参数
+- `maxIter`：最大迭代次数
+- `epsilon`：收敛阈值
+- `X`：初始化的张量（如果没有提供，则使用`M`的已知元素和平均值进行初始化）
+
+函数的输出参数包括：
+
+- `Y`：补全后的张量
+- `errList`：每次迭代的误差列表
+
+函数的主要步骤包括：
+
+- 初始化参数和变量
+- 迭代更新`Y`，直到满足收敛条件或达到最大迭代次数
+- 返回补全后的张量和误差列表
