@@ -294,3 +294,6 @@ fprintf('FaLRTC ends: total iterations = %d   difference=%f\n\n', k, errList(k))
 ```
 **具体参考另一仓库**
 # HaLRTC
+$$min_X: \sum_i \alpha_i \|X_{i(i)}\|_*$$
+
+$$s.t.:  X_\Omega = T_\Omega$$
