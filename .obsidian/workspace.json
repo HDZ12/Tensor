@@ -11,11 +11,14 @@
             "id": "b029aaa69a4e9a9f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/READEME.md",
-                "mode": "source",
-                "source": false
+                "file": "未命名.canvas",
+                "viewState": {
+                  "x": 0,
+                  "y": 0,
+                  "zoom": 0
+                }
               }
             }
           }
@@ -69,8 +72,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "a7ddb3fe0878b741",
@@ -86,7 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/READEME.md",
+                "file": "未命名.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +105,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/READEME.md",
+                "file": "未命名.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +128,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/READEME.md"
+                "file": "未命名.canvas"
               }
             }
           },
@@ -165,10 +167,10 @@
   },
   "active": "b029aaa69a4e9a9f",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
     "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/READEME.md",
-    "README.md",
     "未命名.canvas",
+    "conflict-files-obsidian-git.md",
+    "README.md",
     "未命名 1.canvas",
     "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/code/testImg.png",
     "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/code/untitled.png",

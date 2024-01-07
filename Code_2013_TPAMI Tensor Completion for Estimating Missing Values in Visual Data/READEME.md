@@ -297,3 +297,83 @@ fprintf('FaLRTC ends: total iterations = %d   difference=%f\n\n', k, errList(k))
 $$min_X: \sum_i \alpha_i \|X_{i(i)}\|_*$$
 
 $$s.t.:  X_\Omega = T_\Omega$$
+
+函数的输入参数包括：
+
+- `T`：需要进行补全的张量
+- `Omega`：表示已知元素位置的矩阵
+- `alpha`：用于调整低秩正则项的权重
+- `beta`：用于调整数据一致性项的权重
+- `maxIter`：最大迭代次数
+- `epsilon`：收敛阈值
+- `X`：初始化的张量（如果没有提供，则使用`T`的已知元素和平均值进行初始化）
+
+函数的输出参数包括：
+
+- `X`：补全后的张量
+- `errList`：每次迭代的误差列表
+
+函数的主要步骤包括：
+
+- 初始化参数和变量
+- 迭代更新`X`，直到满足收敛条件或达到最大迭代次数
+- 返回补全后的张量和误差列表
+```Matlab
+function [X, errList] = HaLRTC(T, Omega, alpha, beta, maxIter, epsilon, X)
+
+if nargin < 7
+    X = T;
+    X(logical(1-Omega)) = mean(T(Omega));
+    % X(logical(1-Omega)) = 10;
+end
+
+errList = zeros(maxIter, 1);
+dim = size(T);
+Y = cell(ndims(T), 1);
+M = Y;
+
+normT = norm(T(:));
+for i = 1:ndims(T)
+    Y{i} = X;
+    M{i} = zeros(dim);
+end
+
+Msum = zeros(dim);
+Ysum = zeros(dim);
+for k = 1: maxIter
+    if mod(k, 20) == 0
+        fprintf('HaLRTC: iterations = %d   difference=%f\n', k, errList(k-1));
+    end
+    beta = beta * 1.05;
+    
+    % update Y
+    Msum = 0*Msum;
+    Ysum = 0*Ysum;
+    for i = 1:ndims(T)
+        Y{i} = Fold(Pro2TraceNorm(Unfold(X-M{i}/beta, dim, i), alpha(i)/beta), dim, i);
+        Msum = Msum + M{i};
+        Ysum = Ysum + Y{i};
+    end
+    
+    % update X
+    %X(logical(1-Omega)) = ( Msum(logical(1-Omega)) + beta*Ysum(logical(1-Omega)) ) / (ndims(T)*beta);
+    lastX = X;
+    X = (Msum + beta*Ysum) / (ndims(T)*beta);
+    X(Omega) = T(Omega);
+    
+    % update M
+    for i = 1:ndims(T)
+        M{i} = M{i} + beta*(Y{i} - X);
+    end
+    
+    % compute the error
+    errList(k) = norm(X(:)-lastX(:)) / normT;
+    if errList(k) < epsilon
+        break;
+    end
+end
+
+errList = errList(1:k);
+fprintf('FaLRTC ends: total iterations = %d   difference=%f\n\n', k, errList(k));
+```
+**具体参考另一仓库**
