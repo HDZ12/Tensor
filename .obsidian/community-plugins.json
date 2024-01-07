@@ -13,12 +13,11 @@
   "language-translator",
   "obsidian-git",
   "obsidian-omnivore",
-  "oz-image-plugin",
   "omnisearch",
   "quickadd",
   "obsidian-style-settings",
   "obsidian-tasks-plugin",
   "templater-obsidian",
   "text-extractor",
-  "ProxyGithub"
+  "oz-image-plugin"
 ]
