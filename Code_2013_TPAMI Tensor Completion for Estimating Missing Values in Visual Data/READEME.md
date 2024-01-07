@@ -156,5 +156,7 @@ fprintf('SiLRTC ends: total iterations = %d difference=%f\n\n', k, errList(k));
 **具体信息请参考我的另一个仓库：SCI-programming**
 # FaLRTC
 $$min_{X} : \Psi(X)$$
+
 $$s.t. : X_\Omega = M_\Omega$$
+
 $$\Psi(X) = max_{Z_{i(i)} <= 1}: <X, \sum_i Y_i> - 0.5 \mu_i \|Y_i\|_F^2$$
