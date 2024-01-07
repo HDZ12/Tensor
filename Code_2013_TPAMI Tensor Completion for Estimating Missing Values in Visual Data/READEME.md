@@ -86,3 +86,75 @@ $$s.t. X_\Omega = T_\Omega$$
 - `maxIter`：最大迭代次数。
 - `epsilon`：收敛阈值。
 - `X`：已完成张量的初始猜测（可选）。
+```Matlab
+function [X, errList] = SiLRTC(T, Omega, alpha, gamma, maxIter, epsilon, X)
+
+if nargin < 7
+
+X = T;
+
+X(logical(1-Omega)) = mean(T(Omega));
+
+end
+
+errList = zeros(maxIter, 1);
+
+normT = norm(T(:));
+
+%L = errList;
+
+dim = size(T);
+
+M = cell(ndims(T), 1);
+
+gammasum = sum(gamma);
+
+tau = alpha./ gamma;
+
+%normT = norm(T(:));
+
+for k = 1:maxIter
+
+if mod(k, 20) == 0
+
+fprintf('SiLRTC: iterations = %d difference=%f\n', k, errList(k-1));
+
+end
+
+Xsum = 0;
+
+for i = 1:ndims(T)
+
+M{i} = Fold(Pro2TraceNorm(Unfold(X, dim, i), tau(i)), dim, i);
+
+Xsum = Xsum + gamma(i) * M{i};
+
+end
+
+Xlast = X;
+
+X = Xsum / gammasum;
+
+X(Omega) = T(Omega);
+
+errList(k) = norm(X(:)-Xlast(:)) / normT;
+
+if (errList(k) < epsilon)
+
+errList = errList(1:k);
+
+break;
+
+end
+
+%L(k) = norm(X(:)-T(:)) / normT;
+
+end
+
+fprintf('SiLRTC ends: total iterations = %d difference=%f\n\n', k, errList(k));
+```
+**具体信息请参考我的另一个仓库：SCI-programming**
+# FaLRTC
+$$min_{X} : \Psi(X)$$
+$$s.t. : X_\Omega = M_\Omega$$
+$$\Psi(X) = max_{Z_{i(i)} <= 1}: <X, \sum_i Y_i> - 0.5 \mu_i \|Y_i\|_F^2$$
