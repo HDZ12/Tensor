@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/READEME.md",
-                "mode": "preview",
+                "file": "README.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "a7ddb3fe0878b741",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/READEME.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/READEME.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/READEME.md"
+                "file": "README.md"
               }
             }
           },
@@ -165,16 +164,16 @@
   },
   "active": "b029aaa69a4e9a9f",
   "lastOpenFiles": [
-    "Low-rank-tensor-completion-via-smooth-matrix-factorization-master/笔记.md",
-    "Low-rank-tensor-completion-via-smooth-matrix-factorization-master/README.md",
     "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/READEME.md",
-    "未命名.canvas",
-    "conflict-files-obsidian-git.md",
-    "README.md",
-    "未命名 1.canvas",
-    "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/code/testImg.png",
     "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/code/untitled.png",
     "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/code/README.pdf",
-    "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/code/modifiedImg.png"
+    "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/code/modifiedImg.png",
+    "README.md",
+    "Low-rank-tensor-completion-via-smooth-matrix-factorization-master/笔记.md",
+    "Low-rank-tensor-completion-via-smooth-matrix-factorization-master/README.md",
+    "未命名.canvas",
+    "conflict-files-obsidian-git.md",
+    "未命名 1.canvas",
+    "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/code/testImg.png"
   ]
 }
