@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/READEME.md",
+                "file": "Low-rank-tensor-completion-via-smooth-matrix-factorization-master/笔记.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/READEME.md",
+                "file": "Low-rank-tensor-completion-via-smooth-matrix-factorization-master/笔记.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/READEME.md",
+                "file": "Low-rank-tensor-completion-via-smooth-matrix-factorization-master/笔记.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/READEME.md"
+                "file": "Low-rank-tensor-completion-via-smooth-matrix-factorization-master/笔记.md"
               }
             }
           },
@@ -164,8 +164,10 @@
   },
   "active": "b029aaa69a4e9a9f",
   "lastOpenFiles": [
-    "未命名.canvas",
+    "Low-rank-tensor-completion-via-smooth-matrix-factorization-master/README.md",
+    "Low-rank-tensor-completion-via-smooth-matrix-factorization-master/笔记.md",
     "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/READEME.md",
+    "未命名.canvas",
     "conflict-files-obsidian-git.md",
     "README.md",
     "未命名 1.canvas",
