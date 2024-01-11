@@ -58,7 +58,7 @@ for nstep=1:maxit
                 end
             end
         end
-    end'.mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm.
+    end
     error=sqrt(error)/normg;
     if error<tol
         break;
