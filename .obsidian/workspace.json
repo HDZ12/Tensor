@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Low-rank-tensor-completion-via-smooth-matrix-factorization-master/READEME.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Low-rank-tensor-completion-via-smooth-matrix-factorization-master/READEME.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Low-rank-tensor-completion-via-smooth-matrix-factorization-master/READEME.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Low-rank-tensor-completion-via-smooth-matrix-factorization-master/READEME.md"
               }
             }
           },
@@ -163,11 +163,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "b029aaa69a4e9a9f",
+  "active": "1c84577912ba0a71",
   "lastOpenFiles": [
+    "README.md",
     "Low-rank-tensor-completion-via-smooth-matrix-factorization-master/READEME.md",
     "Low-rank-tensor-completion-via-smooth-matrix-factorization-master/lib/SMFLRTC/Framelet_X3.asv",
-    "README.md",
     "Low-rank-tensor-completion-via-smooth-matrix-factorization-master/README.md",
     "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/READEME.md",
     "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/code/untitled.png",
