@@ -81,3 +81,137 @@ assert(idx<=L);
 
 DecVal = Dec{idx};
 ```
+## summary
+函数的主要步骤如下：
+
+1. **初始化参数**：从`opts2`中获取`mu`、`beta`和`maxit`等参数，并设置一些初始值。
+    
+2. **生成Framelet滤波器**：调用`GenerateFrameletFilter`函数生成Framelet滤波器。
+    
+3. **主循环**：在`maxit`次迭代中，执行以下步骤：
+    
+    - **求解X**：计算临时变量`temp`和`C`，然后使用这些变量更新`X_out`。
+    - **求解Z**：更新`X_transition`，然后使用`FraDecMultiLevel`函数和`wthresh`函数更新`Z`。
+    - **更新Theta**：计算误差`error`，并根据`C`和`Z`的差值更新`Theta`。
+
+如果误差`error`小于阈值`tol`，则跳出循环。最后，函数返回`X_out`。
+```matlab
+function X_out=Framelet_X3(A,Y,X_k,rho,opts2,x_size)
+
+mu = opts2.mu;
+
+beta = opts2.beta;
+
+maxit = opts2.F_it;
+
+frame = 1;
+
+Level = 1;
+
+wLevel = 1/2;
+
+tol = 1e-6;
+
+[D,R]=GenerateFrameletFilter(frame);
+
+nD=length(D);
+
+m=x_size(1);
+
+n=x_size(2);
+
+normg=norm(Y,'fro');
+
+e=size(A,2);
+
+X_way=[m,n,e];
+
+X_transition=zeros(m,n*e);
+
+X_out=zeros(e,m*n);
+
+Z=FraDecMultiLevel(X_transition,D,Level);
+
+Theta=Z;
+
+for nstep=1:maxit
+
+%% solve X
+
+temp=mu*A'*Y;
+
+C=CoeffOper('-',Z,Theta);
+
+tempC=Unfold(Fold(FraRecMultiLevel(C,R,Level),X_way,1),X_way,3);
+
+X_out=pinv(mu*A'*A+(rho+beta)*eye(size(A'*A)))*(rho*X_k+temp+beta*tempC); %#ok<MHERM>
+
+%% solve Z
+
+X_transition=Unfold(Fold(X_out,X_way,3),X_way,1);
+
+C=FraDecMultiLevel(X_transition,D,Level);
+
+Thresh=1/beta;
+
+for ki=1:Level
+
+for ji=1:nD-1
+
+for jj=1:nD-1
+
+Z{ki}{ji,jj}=wthresh(C{ki}{ji,jj}+Theta{ki}{ji,jj},'s',Thresh);
+
+end
+
+end
+
+if wLevel<=0
+
+Thresh=Thresh*norm(D{1});
+
+else
+
+Thresh=Thresh*wLevel;
+
+end
+
+end
+
+%% update Theta
+
+error=0;
+
+for ki=1:Level
+
+for ji=1:nD-1
+
+for jj=1:nD-1
+
+if ((ji~=1)||(jj~=1))||(ki==Level)
+
+deltab=C{ki}{ji,jj}-Z{ki}{ji,jj};
+
+error=error+norm(deltab,'fro')^2;
+
+Theta{ki}{ji,jj}=Theta{ki}{ji,jj}+deltab;
+
+end
+
+end
+
+end
+
+end
+
+error=sqrt(error)/normg;
+
+if error<tol
+
+break;
+
+end
+
+end
+```
+# TV_A3
