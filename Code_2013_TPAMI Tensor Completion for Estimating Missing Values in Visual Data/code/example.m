@@ -10,30 +10,30 @@ close all;
 
 addpath('mylib/');
 
-T =double(imread('testImg.png'));
+T =double(imread('house.jpg'));
 % 读取图像
-originalImage = imread('testImg.png');
+% originalImage = imread('house.jpg');
 
-% 获取图像的大小
-[rows, cols, ~] = size(originalImage);
-
-% 计算要删除的像素范围
-removeRows = round(rows * 0.5); % 删除百分之三十的行
-removeCols = round(cols * 0.5); % 删除百分之三十的列
-
-% 计算要删除的像素范围的上下左右边界
-top = round((rows - removeRows) / 2);
-bottom = top + removeRows;
-left = round((cols - removeCols) / 2);
-right = left + removeCols;
-
-% 将要删除的像素值设置为0
-originalImage(top:bottom, left:right, :) = 0;
-
-% 保存编辑后的图像
-imwrite(originalImage, 'modifiedImg.png');
-X = double(imread('modifiedImg.png'))
-Omega = (X>0);
+% % 获取图像的大小
+% [rows, cols, ~] = size(originalImage);
+% 
+% % 计算要删除的像素范围
+% removeRows = round(rows * 0.5); % 删除百分之三十的行
+% removeCols = round(cols * 0.5); % 删除百分之三十的列
+% 
+% % 计算要删除的像素范围的上下左右边界
+% top = round((rows - removeRows) / 2);
+% bottom = top + removeRows;
+% left = round((cols - removeCols) / 2);
+% right = left + removeCols;
+% 
+% % 将要删除的像素值设置为0
+% originalImage(top:bottom, left:right, :) = 0;
+% 
+% % 保存编辑后的图像
+% imwrite(originalImage, 'modifiedImg.png');
+% X = double(imread('modifiedImg.png'))
+Omega = ( T < 120);
 
 alpha = [1, 1, 1e-3];
 alpha = alpha / sum(alpha);
