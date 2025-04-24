@@ -11,15 +11,30 @@
             "id": "b029aaa69a4e9a9f",
             "type": "leaf",
             "state": {
+              "type": "image",
+              "state": {
+                "file": "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/code/untitled.png"
+              },
+              "icon": "lucide-image",
+              "title": "untitled"
+            }
+          },
+          {
+            "id": "635f6291ad4dc70f",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "未命名.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "未命名"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -38,8 +53,11 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
-              }
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
             }
           },
           {
@@ -54,7 +72,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
             }
           },
           {
@@ -62,7 +82,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
             }
           }
         ]
@@ -85,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "未命名.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,7 +115,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "未命名 的反向链接列表"
             }
           },
           {
@@ -102,10 +126,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "未命名.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "未命名 的出链列表"
             }
           },
           {
@@ -115,8 +141,12 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
-              }
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
             }
           },
           {
@@ -125,8 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
-              }
+                "file": "未命名.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "未命名 的大纲"
             }
           },
           {
@@ -134,7 +169,9 @@
             "type": "leaf",
             "state": {
               "type": "calendar",
-              "state": {}
+              "state": {},
+              "icon": "lucide-file",
+              "title": "插件不再活动"
             }
           }
         ],
@@ -156,22 +193,21 @@
       "obsidian-advanced-slides:Show Slide Preview": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "cloze:显/隐所有填空": false,
-      "obsidian-excalidraw-plugin:新建绘图文件": false,
-      "obsidian-omnivore:Omnivore": false,
-      "omnisearch:Omnisearch": false,
-      "templater-obsidian:Templater": false
+      "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "b029aaa69a4e9a9f",
+  "active": "635f6291ad4dc70f",
   "lastOpenFiles": [
-    "Low-rank-tensor-completion-via-smooth-matrix-factorization-master/READEME.md",
+    "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/code/untitled.png",
+    "未命名.md",
+    "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/code/modifiedImg.png",
+    "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/code/house.jpg",
     "README.md",
+    "Low-rank-tensor-completion-via-smooth-matrix-factorization-master/READEME.md",
     "Low-rank-tensor-completion-via-smooth-matrix-factorization-master/lib/SMFLRTC/Framelet_X3.asv",
     "Low-rank-tensor-completion-via-smooth-matrix-factorization-master/README.md",
     "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/READEME.md",
-    "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/code/untitled.png",
     "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/code/README.pdf",
-    "Code_2013_TPAMI Tensor Completion for Estimating Missing Values in Visual Data/code/modifiedImg.png",
     "未命名.canvas",
     "conflict-files-obsidian-git.md",
     "未命名 1.canvas",
